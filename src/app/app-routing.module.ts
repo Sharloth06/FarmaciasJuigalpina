@@ -11,11 +11,10 @@ const routes: Routes = [
     path: 'home',
     loadChildren: './home/home.module#HomePageModule'
   },
-  {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
+  { path: 'mismedicamentos',
+    loadChildren: './mismedicamentos/mismedicamentos.module#MismedicamentosPageModule' 
   },
-  { path: 'mismedicamentos', loadChildren: './mismedicamentos/mismedicamentos.module#MismedicamentosPageModule' }
+  { path: 'list', loadChildren: './list/list.module#ListPageModule' }
 ];
 
 @NgModule({
