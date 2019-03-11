@@ -14,7 +14,8 @@ const routes: Routes = [
   { path: 'mismedicamentos',
     loadChildren: './mismedicamentos/mismedicamentos.module#MismedicamentosPageModule' 
   },
-  { path: 'list', loadChildren: './list/list.module#ListPageModule' }
+  { path: 'list', loadChildren: './list/list.module#ListPageModule' },
+  { path: 'farmacias', loadChildren: './farmacias/farmacias.module#FarmaciasPageModule' }
 ];
 
 @NgModule({

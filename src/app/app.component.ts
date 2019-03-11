@@ -20,6 +20,13 @@ export class AppComponent {
       url:'/mismedicamentos',
       icon:'star'
     },
+
+    {
+      title: "Farmacias",
+      url: '/farmacias',
+      icon: 'medkit'
+
+    }
   ];
 
   constructor(
