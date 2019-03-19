@@ -26,6 +26,18 @@ export class AppComponent {
       url: '/farmacias',
       icon: 'medkit'
 
+    },
+    {
+      title: "Acerca de nosotros",
+      url: '/acerca de nosotros',
+      icon: 'person'
+
+    },
+    {
+      title: "Calificanos",
+      url: '/calificanos',
+      icon: 'star'
+
     }
   ];
 
