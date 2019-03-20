@@ -15,7 +15,9 @@ const routes: Routes = [
     loadChildren: './mismedicamentos/mismedicamentos.module#MismedicamentosPageModule' 
   },
   { path: 'list', loadChildren: './list/list.module#ListPageModule' },
-  { path: 'farmacias', loadChildren: './farmacias/farmacias.module#FarmaciasPageModule' }
+  { path: 'farmacias', loadChildren: './farmacias/farmacias.module#FarmaciasPageModule' },
+  { path: 'promociones', loadChildren: './promociones/promociones.module#PromocionesPageModule' },
+  { path: 'informacionfarmacias', loadChildren: './informacionfarmacias/informacionfarmacias.module#InformacionfarmaciasPageModule' }
 ];
 
 @NgModule({
