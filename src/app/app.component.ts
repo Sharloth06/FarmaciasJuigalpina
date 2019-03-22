@@ -32,12 +32,6 @@ export class AppComponent {
       url: '/acerca de nosotros',
       icon: 'person'
 
-    },
-    {
-      title: "Calificanos",
-      url: '/calificanos',
-      icon: 'star'
-
     }
   ];
 
