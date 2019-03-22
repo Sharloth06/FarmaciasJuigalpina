@@ -29,9 +29,8 @@ export class AppComponent {
     },
     {
       title: "Acerca de nosotros",
-      url: '/acerca de nosotros',
+      url: '/acerca-de-nosotros',
       icon: 'person'
-
     }
   ];
 
