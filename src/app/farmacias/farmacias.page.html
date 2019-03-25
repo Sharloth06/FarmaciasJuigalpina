@@ -7,24 +7,194 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-    <ion-list>
-        <ion-item-sliding>
-          <ion-item>
-            <ion-label>Item</ion-label>
-          </ion-item>
-          <ion-item-options side="end">
-            <ion-item-option (click)="unread(item)">Unread</ion-item-option>
-          </ion-item-options>
-        </ion-item-sliding>
-      
-        <ion-item-sliding>
-          <ion-item>
-            <ion-label>Item</ion-label>
-          </ion-item>
-          <ion-item-options side="end">
-            <ion-item-option (click)="unread(item)">Unread</ion-item-option>
-          </ion-item-options>
-        </ion-item-sliding>
-      </ion-list>
+<ion-content padding>
+<ion-row>
+
+  <ion-col size ="6">
+    <ion-card class ="welcome-card">
+      <ion-img src="/assets/farmaco.jpg"></ion-img>
+      <ion-card-header>
+        <ion-card-title>El Fármaco</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Dirección: BDF 2c al Oeste 1/2c al N </p>
+        <p>Teléfono: 2512 2701</p> 
+        <p>Horarios de Atención</p> 
+
+        <p>lunes:     8:00 am – 9:00 pm</p>  
+        <p>martes     8:00 am – 9:00 pm </p> 
+        <p>miércoles	8:00 am – 9:00 pm</p>
+        <p>jueves	    8:00 am – 9:00 pm</p>
+        <p>viernes	  8:00 am – 9:00 pm</p>
+        <p>sábado	    8:00 am – 9:00 pm</p>
+        <p>domingo	  8:00 am – 1:00  pm</p>
+      </ion-card-content>
+      <!-- <ion-button>
+        <ion-icon name = "send"> </ion-icon>
+        VISITAR
+      </ion-button> -->
+    </ion-card>
+  </ion-col>
+  <ion-col size ="6">
+      <ion-card class ="welcome-card">
+        <ion-img src="/assets/baez.jpg"></ion-img>
+        <ion-card-header>
+          <ion-card-title>Farmacia Báez</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>Dirección: Cementerio 1/2 c al este</p>
+          <p>Teléfono: 2512 3165</p> 
+          <p>Horarios de Atención</p> 
+  
+          <p>Lunes a domingo</p>  
+          <p>Abierto 24 horas</p> 
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col size ="6">
+        <ion-card class ="welcome-card">
+          <ion-img src ="/assets/farmatodo.jpeg"></ion-img>
+          <ion-card-header>
+            <ion-card-title>FarmaTodo</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Dirección: Gasolinera puma 2c al este</p>
+            <p>Teléfono: 2512 5528</p> 
+            <p>Horarios de Atención</p>   
+            <p>lunes:     8:00 am – 8:00 pm</p>  
+            <p>martes     8:00 am – 8:00 pm </p> 
+            <p>miércoles	8:00 am – 8:00 pm</p>
+            <p>jueves	    8:00 am – 8:00 pm</p>
+            <p>viernes	  8:00 am – 8:00 pm</p>
+            <p>sábado	    8:00 am – 8:00 pm</p>
+            <p>domingo	  Cerrado </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size ="6">
+          <ion-card class ="welcome-card">
+            <ion-img src ="/assets/cristal.jpg"></ion-img>
+            <ion-card-header>
+              <ion-card-title>Farmacia Cristal</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p>Dirección: Pali 1/2 c al sur</p>
+              <p>Teléfono: 2512 3141</p> 
+              <p>Horarios de Atención</p>   
+              <p>lunes:     8:00 am – 6:00 pm</p>  
+              <p>martes     8:00 am – 6:00 pm </p> 
+              <p>miércoles	8:00 am – 6:00 pm</p>
+              <p>jueves	    8:00 am – 6:00 pm</p>
+              <p>viernes	  8:00 am – 6:00 pm</p>
+              <p>sábado	    8:00 am – 6:00 pm</p>
+              <p>domingo	  Cerrado </p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+      <ion-col size ="6">
+            <ion-card class ="welcome-card">
+              <ion-img src ="/assets/centromedico.png"></ion-img>
+              <ion-card-header>
+                <ion-card-title>Farmacia Centro Medico Juigalpa</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <p>Dirección: LAFISE 1c oeste, Juigalpa</p>
+                <p>Teléfono: 2512 1193</p> 
+                <p>Horarios de Atención</p>   
+                <p>lunes:     7:30 am – 6:00 pm</p>  
+                <p>martes     7:30 am – 6:00 pm </p> 
+                <p>miércoles	7:30 am – 6:00 pm</p>
+                <p>jueves	    7:30 am – 6:00 pm</p>
+                <p>viernes	  7:30 am – 6:00 pm</p>
+                <p>sábado	    7:30 am – 6:00 pm</p>
+                <p>domingo	  Cerrado </p>
+              </ion-card-content>
+            </ion-card>
+      </ion-col>
+      <ion-col size ="6">
+          <ion-card class ="welcome-card">
+            <ion-img src ="/assets/sanramon.jpg"></ion-img>
+            <ion-card-header>
+              <ion-card-title>Farmacia San Ramón</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p>Dirección: Parque central, 2 1/2 al norte</p>
+              <p>Teléfono: 2512 2786</p> 
+              <p>Horarios de Atención</p>   
+              <p>lunes:     6:00 am – 11:00 pm</p>  
+              <p>martes     6:00 am – 11:00 pm </p> 
+              <p>miércoles	6:00 am – 11:00 pm</p>
+              <p>jueves	    6:00 am – 11:00 pm</p>
+              <p>viernes	  6:00 am – 11:00 pm</p>
+              <p>sábado	    6:00 am – 11:00 pm</p>
+              <p>domingo	  6:00 am – 11:00 pm</p>
+            </ion-card-content>
+          </ion-card>
+    </ion-col>
+
+    <ion-col size ="6">
+        <ion-card class ="welcome-card">
+          <ion-img src ="/assets/elcamarada.jpg"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Farmacia El Camarada</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Dirección: Parque central, 3 cuadras al sur</p>
+            <p>Teléfono: 8767 4219</p> 
+            <p>Horarios de Atención</p>   
+            <p>lunes:     8:00 am – 6:00 pm</p>  
+            <p>martes     8:00 am – 6:00 pm </p> 
+            <p>miércoles	8:00 am – 6:00 pm</p>
+            <p>jueves	    8:00 am – 6:00 pm</p>
+            <p>viernes	  8:00 am – 6:00 pm</p>
+            <p>sábado	    8:00 am – 6:00 pm</p>
+            <p>domingo	  8:00 am - 12:00 pm </p>
+          </ion-card-content>
+        </ion-card>
+    </ion-col>
+
+    <ion-col size ="6">
+        <ion-card class ="welcome-card">
+          <ion-img src ="/assets/divinonino.jpg"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Farmacia Divino Niño</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Dirección: Del comedor Lumbí, 1 cuadra al sur</p>
+            <p>Teléfono: 2512 1845</p> 
+            <p>Horarios de Atención</p>   
+            <p>lunes:     7:00 am – 9:00 pm</p>  
+            <p>martes     7:00 am – 9:00 pm </p> 
+            <p>miércoles	7:00 am – 9:00 pm</p>
+            <p>jueves	    7:00 am – 9:00 pm</p>
+            <p>viernes	  7:00 am – 9:00 pm</p>
+            <p>sábado	    7:00 am – 9:00 pm</p>
+            <p>domingo	  7:00 am – 9:00 pm</p>
+          </ion-card-content>
+        </ion-card>
+    </ion-col>
+
+    <ion-col size ="6">
+        <ion-card class ="welcome-card">
+          <ion-img src ="/assets/farmaahorro.jpg"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Farmacia Del Ahorro</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Dirección: </p>
+            <p>Teléfono: 2512 0238</p> 
+            <p>Horarios de Atención</p>   
+            <p>lunes:     8:00 am – 9:00 pm</p>  
+            <p>martes     8:00 am – 9:00 pm </p> 
+            <p>miércoles	8:00 am – 9:00 pm</p>
+            <p>jueves	    8:00 am – 9:00 pm</p>
+            <p>viernes	  8:00 am – 9:00 pm</p>
+            <p>sábado	    8:00 am – 9:00 pm</p>
+            <p>domingo	  8:00 am – 1:00 pm</p>
+          </ion-card-content>
+        </ion-card>
+    </ion-col>
+          
+  </ion-row>
 </ion-content>
