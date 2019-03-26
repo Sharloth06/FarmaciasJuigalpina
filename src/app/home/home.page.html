@@ -15,8 +15,10 @@
     <ion-card-header>
       <ion-card-title>Encuentra el medicamento que necesita más fácil y rápido</ion-card-title>
     </ion-card-header>
-    <!-- Default Searchbar -->
-    <ion-searchbar></ion-searchbar>
+  
+    <ion-searchbar>
+        
+    </ion-searchbar>
   </ion-card>
    <!--  -->
   <ion-card>
@@ -24,15 +26,11 @@
       <ion-card-subtitle></ion-card-subtitle>
       <ion-card-title>Promociones</ion-card-title>
     </ion-card-header>
-    <ion-card-content>
-      <ion-img src="/assets/farmacia1.jpeg"></ion-img>
+    <ion-card-content *ngFor="let promocion of promociones">
+      <ion-img [src]="promocion.imgUrl"></ion-img>
     </ion-card-content>
-    <ion-button>
-      <ion-icon name="send"></ion-icon>
-      Seguir
-    </ion-button>
   </ion-card>
-   <!-- Default Searchbar -->
+  
    <ion-card>
     <ion-card-header>
       <ion-card-subtitle></ion-card-subtitle>
@@ -40,12 +38,9 @@
     <ion-card-content>
       <ion-img src="/assets/farmacia2.jpeg"></ion-img>
     </ion-card-content>
-    <ion-button>
-      <ion-icon name="send"></ion-icon>
-      Seguir
-    </ion-button>
+
   </ion-card>
-<!-- Default Searchbar -->
+
   <ion-card>
     <ion-card-header>
       <ion-card-subtitle></ion-card-subtitle>
@@ -53,12 +48,9 @@
     <ion-card-content>
       <ion-img src="/assets/farmacia3.jpeg"></ion-img>
     </ion-card-content>
-    <ion-button>
-      <ion-icon name="send"></ion-icon>
-      Seguir
-    </ion-button>
+
   </ion-card>
-  <!-- Default Searchbar -->
+ 
   <ion-card>
     <ion-card-header>
       <ion-card-subtitle></ion-card-subtitle>
@@ -66,22 +58,10 @@
     <ion-card-content>
       <ion-img src="/assets/farmacia4.jpeg"></ion-img>
     </ion-card-content>
-    <ion-button>
-      <ion-icon name="send"></ion-icon>
-      ingrid
-    </ion-button>
+
     </ion-card>
+  
+
  <!-- ion card -->
- <ion-card>
-  <ion-card-header>
-    <ion-card-title>Farmacia Cristal</ion-card-title>
-  </ion-card-header>
-  <ion-card-content>
-    <ion-img src="/assets/banner2.jpg"></ion-img>
-  </ion-card-content>
-  <ion-button>
-    <ion-icon name="send"></ion-icon>
-    ingrid
-  </ion-button>
-  </ion-card>
+
 </ion-content>

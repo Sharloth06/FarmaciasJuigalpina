@@ -1,11 +1,102 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>mis medicamentos</ion-title>
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+        Mis Medicamentos
+    </ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content padding>
-  <ion-button (click)='irHome()'></ion-button>
-  <ion-button>otro boton</ion-button>
-</ion-content>
+    <ion-button expand ="full" color = "primary" (click) = "medicamentos-fav"></ion-button>
+        <ion-button (click)="medicamentos-fav"><ion-icon name="arrow-back"></ion-icon></ion-button>
+    </ion-buttons>
+  <ion-button>Más Populares</ion-button>
 
+  <ion-list>
+      <ion-item>
+        <ion-label>Tafil</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Dorival</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Clonazepam</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Paracetamol</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Diclofenaco</ion-label>
+      </ion-item>
+      <ion-item>
+      <ion-label>Metamucil</ion-label>
+      </ion-item>
+      <ion-item>
+      <ion-label>Repaglinida</ion-label>
+      </ion-item>
+      <ion-item>
+      <ion-label>Rifabutina</ion-label>
+      </ion-item>
+      <ion-item>
+      <ion-label>Meridia</ion-label>
+      </ion-item>
+      <ion-item>
+      <ion-label>Ibuprofeno</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Lorazepam</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Rabeprazol</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Anfetamina</ion-label>
+         </ion-item>
+    </ion-list>
+  <!-- <ion-col>
+    <ion-col size = "3">
+        <ion-card-header>
+            <ion-card-title>Tafil</ion-card-title>
+          </ion-card-header>
+      <ion-card class ="welcome-card">
+        <ion-img src="/assets/tafil.jpg"></ion-img>
+
+        <ion-card-content>
+
+        </ion-card-content>
+        <ion-button>
+          <ion-icon name = "send"> </ion-icon>
+          VISITAR
+        </ion-button> -->
+      <!-- </ion-card>
+    </ion-col>
+
+    <ion-col>
+        <ion-card-header>
+            <ion-card-title>Alka-AD</ion-card-title>
+        </ion-card-header>
+        <ion-card class ="welcome-card">
+        <ion-img src="/assets/alkade.jpg"></ion-img>
+          
+          <ion-card-content>
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col> -->
+
+      <!-- <ion-col>
+          <ion-card class ="welcome-card">
+            <ion-img src="/assets/clonazepam.jpg"></ion-img>
+            <ion-card-header>
+              <ion-card-title>Clonazepam</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+   
+    </ion-col> --> 
+  </ion-content>

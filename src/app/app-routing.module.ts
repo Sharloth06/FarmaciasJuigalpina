@@ -17,7 +17,9 @@ const routes: Routes = [
   { path: 'list', loadChildren: './list/list.module#ListPageModule' },
   { path: 'farmacias', loadChildren: './farmacias/farmacias.module#FarmaciasPageModule' },
   { path: 'promociones', loadChildren: './promociones/promociones.module#PromocionesPageModule' },
-  { path: 'informacionfarmacias', loadChildren: './informacionfarmacias/informacionfarmacias.module#InformacionfarmaciasPageModule' }
+  { path: 'informacionfarmacias', loadChildren: './informacionfarmacias/informacionfarmacias.module#InformacionfarmaciasPageModule' },  { path: 'acerca-de-nosotros', loadChildren: './acerca-de-nosotros/acerca-de-nosotros.module#AcercaDeNosotrosPageModule' },
+  { path: 'medicamentos-fav', loadChildren: './medicamentos-fav/medicamentos-fav.module#MedicamentosFavPageModule' }
+
 ];
 
 @NgModule({

@@ -25,19 +25,16 @@ export class AppComponent {
       title: "Farmacias",
       url: '/farmacias',
       icon: 'medkit'
-
+    },
+    {
+      title: "Buzón de Sugerencias",
+      url: '/buzondesugerencias',
+      icon: 'paper-plane'
     },
     {
       title: "Acerca de nosotros",
-      url: '/acerca de nosotros',
+      url: '/acerca-de-nosotros',
       icon: 'person'
-
-    },
-    {
-      title: "Calificanos",
-      url: '/calificanos',
-      icon: 'star'
-
     }
   ];
 
