@@ -11,18 +11,34 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AngularFireModule } from 'angularfire2';
 import { environment } from '../environments/environment';
-import {AngularFirestoreModule} from 'angularfire2/firestore';
+import {AngularFirestoreModule, AngularFirestore} from 'angularfire2/firestore';
 
+
+export const firebaseConfig = {
+  apiKey: "AIzaSyBn2typaIBrLfxTKzQVnhbvZuRFmfTPuSA",
+  authDomain: "farmaciasjuigalpina.firebaseapp.com",
+  databaseURL: "https://farmaciasjuigalpina.firebaseio.com",
+  projectId: "farmaciasjuigalpina",
+  storageBucket: "farmaciasjuigalpina.appspot.com",
+  messagingSenderId: "398452945888"
+
+
+}
 
 @NgModule({
   declarations: [AppComponent],
-  entryComponents: [],
+  entryComponents: [
+
+  ],
+
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule, 
-    AngularFireModule.initializeApp(environment.firebase), AngularFirestoreModule
+    AngularFireModule.initializeApp (firebaseConfig),
+    AngularFirestoreModule
   ],
+
   providers: [
     StatusBar,
     SplashScreen,

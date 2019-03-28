@@ -1,9 +1,44 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Promociones</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle></ion-card-subtitle>
+    <ion-card-title>Promociones</ion-card-title>
+  </ion-card-header>
+  <ion-card-content *ngFor="let promocion of promociones">
+    <ion-img [src]="promocion.imgUrl"></ion-img>
+  </ion-card-content>
+</ion-card>
 
-<ion-content padding>
+ <ion-card>
+  <ion-card-header>
+    <ion-card-subtitle></ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-img src="/assets/farmacia2.jpeg"></ion-img>
+  </ion-card-content>
+
+</ion-card>
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle></ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-img src="/assets/farmacia3.jpeg"></ion-img>
+  </ion-card-content>
+
+</ion-card>
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle></ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-img src="/assets/farmacia4.jpeg"></ion-img>
+  </ion-card-content>
+
+  </ion-card>
+
+
+<!-- ion card -->
 
 </ion-content>

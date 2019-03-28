@@ -1,67 +1,34 @@
-<ion-header>
+<ion-header >
   <ion-toolbar color="secondary">
+
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>
-      Home
+    <ion-title >
+     Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
-<!--  -->
-<ion-content>
-  <ion-card class="welcome-card">
-    <ion-img src="/assets/bannerhome.png"></ion-img>
-    <ion-card-header>
-      <ion-card-title>Encuentra el medicamento que necesita más fácil y rápido</ion-card-title>
-    </ion-card-header>
+
+<ion-content padding >
   
-    <ion-searchbar>
-        
-    </ion-searchbar>
-  </ion-card>
+  <ion-searchbar> </ion-searchbar> 
+    <ion-card-title>Farmacias Mas conocidas</ion-card-title>
+
+    <ion-img src="/assets/farmaco.jpg"></ion-img>
+
+    <ion-card-content>
+        <p>Ofrece los mejores precios </p>
+      </ion-card-content>
+  <ion-img src="/assets/farmatodo.jpeg"></ion-img>
+  <ion-card-content>
+      <p>Mejor Atencion A los clientes</p>
+    </ion-card-content>
+  <ion-img src="/assets/elcamarada.jpg"></ion-img>
+
+ <ion-card-content>
+      <p>Los mejores medicamentos</p>
+    </ion-card-content>
+    
    <!--  -->
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle></ion-card-subtitle>
-      <ion-card-title>Promociones</ion-card-title>
-    </ion-card-header>
-    <ion-card-content *ngFor="let promocion of promociones">
-      <ion-img [src]="promocion.imgUrl"></ion-img>
-    </ion-card-content>
-  </ion-card>
   
-   <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle></ion-card-subtitle>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-img src="/assets/farmacia2.jpeg"></ion-img>
-    </ion-card-content>
-
-  </ion-card>
-
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle></ion-card-subtitle>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-img src="/assets/farmacia3.jpeg"></ion-img>
-    </ion-card-content>
-
-  </ion-card>
- 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle></ion-card-subtitle>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-img src="/assets/farmacia4.jpeg"></ion-img>
-    </ion-card-content>
-
-    </ion-card>
-  
-
- <!-- ion card -->
-
-</ion-content>
