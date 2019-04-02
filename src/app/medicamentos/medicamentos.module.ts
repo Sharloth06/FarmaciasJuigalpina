@@ -3,15 +3,14 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
-
 import { IonicModule } from '@ionic/angular';
 
-import { AcercaDeNosotrosPage } from './acerca-de-nosotros.page';
+import { MedicamentosPage } from './medicamentos.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: AcercaDeNosotrosPage
+    component: MedicamentosPage
   }
 ];
 
@@ -22,6 +21,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [AcercaDeNosotrosPage]
+  declarations: [MedicamentosPage]
 })
-export class AcercaDeNosotrosPageModule {}
+export class MedicamentosPageModule {}

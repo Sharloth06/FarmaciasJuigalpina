@@ -2,15 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-medicamentos-fav',
-  templateUrl: './medicamentos-fav.page.html',
-  styleUrls: ['./medicamentos-fav.page.scss'],
+  selector: 'app-medicamentos',
+  templateUrl: './medicamentos.page.html',
+  styleUrls: ['./medicamentos.page.scss'],
 })
-export class MedicamentosFavPage {
+export class MedicamentosPage  {
 
   constructor(private router: Router) { }
 
- Atras() {
+  Atras() {
 
     this.router.navigate(["/mismedicamentos"])
   }

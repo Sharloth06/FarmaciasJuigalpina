@@ -15,14 +15,12 @@ import {AngularFirestoreModule, AngularFirestore} from 'angularfire2/firestore';
 
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyBn2typaIBrLfxTKzQVnhbvZuRFmfTPuSA",
-  authDomain: "farmaciasjuigalpina.firebaseapp.com",
-  databaseURL: "https://farmaciasjuigalpina.firebaseio.com",
-  projectId: "farmaciasjuigalpina",
-  storageBucket: "farmaciasjuigalpina.appspot.com",
-  messagingSenderId: "398452945888"
-
-
+   apiKey: "AIzaSyBn2typaIBrLfxTKzQVnhbvZuRFmfTPuSA",
+    authDomain: "farmaciasjuigalpina.firebaseapp.com",
+    databaseURL: "https://farmaciasjuigalpina.firebaseio.com",
+    projectId: "farmaciasjuigalpina",
+    storageBucket: "farmaciasjuigalpina.appspot.com",
+    messagingSenderId: "398452945888"
 }
 
 @NgModule({

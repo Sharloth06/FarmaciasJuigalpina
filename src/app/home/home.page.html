@@ -5,18 +5,32 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title >
-     Home
+     Bienvenidos a la App
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
+
+
 <ion-content padding >
-  
-  <ion-searchbar> </ion-searchbar> 
+   
+
+  <ion-searchbar size="large"> 
+
+  </ion-searchbar>
+
+    <ion-list>
+
+   <ion-item * ngfor="let item of todo | async">
+    {{ item.task}}
+
+   </ion-item>
+    </ion-list>
+
     <ion-card-title>Farmacias Mas conocidas</ion-card-title>
 
     <ion-img src="/assets/farmaco.jpg"></ion-img>
-
+  
     <ion-card-content>
         <p>Ofrece los mejores precios </p>
       </ion-card-content>
@@ -30,5 +44,9 @@
       <p>Los mejores medicamentos</p>
     </ion-card-content>
     
-   <!--  -->
+<ion-button  href ="info" color="success" alt="Enviar">Ver Farmacias</ion-button>
+
+<ion-content>
+
+
   

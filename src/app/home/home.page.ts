@@ -2,15 +2,21 @@ import { Component,OnInit } from '@angular/core';
 import { Promocion } from './modelo.promociones';
 import { PromocionesService } from './promociones.service';
 import { AngularFirestore, AngularFirestoreCollection} from 'angularfire2/firestore';
-import { Observable } from 'rxjs';
+// import { Observable } from 'rxjs/observable';
+
 import { NavController } from '@ionic/angular';
+import {Router} from '@angular/router';
 
 
-interface MiCuenta {
 
-  task: String;
-  priority: Number;
-  id : String;
+
+interface ToDo{
+
+  task:string;
+  priority:number;
+  id?: string;
+
+
 }
 
 @Component({
@@ -22,19 +28,19 @@ interface MiCuenta {
 
 export class HomePage  {
 
-  MicuentaCollection: AngularFirestoreCollection<MiCuenta>;
-  Micuenta: Observable<MiCuenta[]>;
+todoCollection: AngularFirestoreCollection<ToDo>
+//todo: Observable<ToDo[]>;
 
- 
   constructor(public navCtrl: NavController,  private asf: AngularFirestore) {}
+  
+  ionViewDiEnter(){
 
-  ionViewDidEnter(){
-   
-    this.MicuentaCollection = this.asf.collection('Micuenta');
-    this.Micuenta = this.MicuentaCollection.valueChanges();
-
+this.todoCollection = this.asf.collection('todo', ref => ref.orderBy('priority'));
+//this.todo = this.todoCollection.valueChanges();
   }
  
+
+
 }
 
 

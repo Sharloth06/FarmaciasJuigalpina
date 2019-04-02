@@ -1,15 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-promociones',
   templateUrl: './promociones.page.html',
   styleUrls: ['./promociones.page.scss'],
 })
-export class PromocionesPage implements OnInit {
+export class PromocionesPage  {
 
-  constructor() { }
+  constructor(private router: Router) {}
+     
+  Atras() {
 
-  ngOnInit() {
+    this.router.navigate(["/mis medicamentos"])
   }
 
-}
+   }

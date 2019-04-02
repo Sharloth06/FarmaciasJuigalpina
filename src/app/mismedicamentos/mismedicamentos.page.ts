@@ -6,14 +6,9 @@ import { Router } from '@angular/router';
   templateUrl: './mismedicamentos.page.html',
   styleUrls: ['./mismedicamentos.page.scss'],
 })
-export class MismedicamentosPage implements OnInit {
+export class MismedicamentosPage  {
 
-  constructor(private router:Router) { }
+  constructor() { }
 
-  irHome(){
-    this.router.navigate(['/home']);
-  }
-  ngOnInit() {
-  }
-
+ 
 }

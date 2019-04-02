@@ -6,7 +6,7 @@ import { Router } from '@angular/router'
   templateUrl: './farmacias.page.html',
   styleUrls: ['./farmacias.page.scss'],
 })
-export class FarmaciasPage implements OnInit {
+export class FarmaciasPage  {
 
   constructor(private router:Router) { }
 
@@ -14,7 +14,6 @@ export class FarmaciasPage implements OnInit {
     this.router.navigate(['/home']);
   }
 
-  ngOnInit() {
-  }
+ 
 
 }

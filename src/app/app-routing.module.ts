@@ -18,7 +18,10 @@ const routes: Routes = [
   { path: 'farmacias', loadChildren: './farmacias/farmacias.module#FarmaciasPageModule' },
   { path: 'promociones', loadChildren: './promociones/promociones.module#PromocionesPageModule' },
   { path: 'informacionfarmacias', loadChildren: './informacionfarmacias/informacionfarmacias.module#InformacionfarmaciasPageModule' },  { path: 'acerca-de-nosotros', loadChildren: './acerca-de-nosotros/acerca-de-nosotros.module#AcercaDeNosotrosPageModule' },
-  { path: 'medicamentos-fav', loadChildren: './medicamentos-fav/medicamentos-fav.module#MedicamentosFavPageModule' }
+  { path: 'medicamentos-fav', loadChildren: './medicamentos-fav/medicamentos-fav.module#MedicamentosFavPageModule' },
+  { path: 'info', loadChildren: './info/info.module#InfoPageModule' },
+  { path: 'medicamentos', loadChildren: './medicamentos/medicamentos.module#MedicamentosPageModule' },
+  { path: 'nosotros', loadChildren: './nosotros/nosotros.module#NosotrosPageModule' }
 
 ];
 
