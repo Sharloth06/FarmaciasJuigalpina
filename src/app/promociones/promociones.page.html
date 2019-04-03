@@ -1,46 +1,36 @@
 <ion-header>
     <ion-toolbar color="secondary">
       <ion-buttons slot="start">
-       <ion-button fill="clear" (click)='Atras()'> <ion-icon name="round-back"></ion-icon></ion-button>
+          <ion-button fill="clear" (click)='Atras()'> <ion-icon name="arrow-round-back"></ion-icon></ion-button>
       </ion-buttons>
-      <ion-title>promo</ion-title>
+      <ion-title>Promociones</ion-title>
     </ion-toolbar>
-  </ion-header>
-
-  </ion-card-content>
-</ion-card>
-
- <ion-card>
-  <ion-card-header>
-    <ion-card-subtitle></ion-card-subtitle>
-  </ion-card-header>
-  <ion-card-content>
-    <ion-img src="/assets/farmacia2.jpeg"></ion-img>
-  </ion-card-content>
-
-</ion-card>
-
-<ion-card>
-  <ion-card-header>
-    <ion-card-subtitle></ion-card-subtitle>
-  </ion-card-header>
-  <ion-card-content>
-    <ion-img src="/assets/farmacia3.jpeg"></ion-img>
-  </ion-card-content>
-
-</ion-card>
-
-<ion-card>
-  <ion-card-header>
-    <ion-card-subtitle></ion-card-subtitle>
-  </ion-card-header>
-  <ion-card-content>
-    <ion-img src="/assets/farmacia4.jpeg"></ion-img>
-  </ion-card-content>
-
-  </ion-card>
+</ion-header>
 
 
-<!-- ion card -->
+<ion-content padding>
+
+
+    <ion-slides pager="true" [options]="slideOpts">
+   <ion-slide size ="25">
+      <ion-img src ="/assets/descarga.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+     <ion-img src ="/assets/farma2.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+    <ion-img src ="/assets/consul.jpg"></ion-img>
+        </ion-slide>
+  
+      </ion-slides>
+
+
+      <ion-card-title color="success">Las mejores promociones</ion-card-title>
+
+
+<ion-card-content >
+<p>Farmacias Juigalpinas en donde tu podras encontrar los mejores medicamentos y precios , solo con un click en la App.</p>
+
+</ion-card-content>
 
 </ion-content>
