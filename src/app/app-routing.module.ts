@@ -23,7 +23,8 @@ const routes: Routes = [
   { path: 'medicamentos', loadChildren: './medicamentos/medicamentos.module#MedicamentosPageModule' },
   { path: 'nosotros', loadChildren: './nosotros/nosotros.module#NosotrosPageModule' },
   { path: 'masproductos', loadChildren: './masproductos/masproductos.module#MasproductosPageModule' },
-  { path: 'promo', loadChildren: './promo/promo.module#PromoPageModule' }
+  { path: 'promo', loadChildren: './promo/promo.module#PromoPageModule' },
+  { path: 'salachat', loadChildren: './salachat/salachat.module#SalachatPageModule' }
 
 ];
 

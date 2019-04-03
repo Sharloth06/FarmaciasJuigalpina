@@ -42,11 +42,7 @@ export class AppComponent {
       url: '/acerca-de-nosotros',
       icon: 'person'
     },
-    {
-      title: "Mi cuenta",
-      url: '/mi cuenta',
-      icon: 'person-add'
-    }
+ 
   ];
 
   constructor(
